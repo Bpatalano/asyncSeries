@@ -12,7 +12,7 @@ let asyncSeriesRecurse = (funArr, cb) => {
       }
       //else run async - [0];
       else {
-        asyncSeries(funArr.slice(1), cb)
+        asyncSeriesRecurse(funArr.slice(1), cb)
       }
     });
   }
